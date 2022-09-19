@@ -100,7 +100,7 @@
 
                 <div class="post__top">
                     <img class='avatar__img' src="/fbfake/fb_fake/img/ava.jpg" />
-                    <input type="text" placeholder="What's on your mind, Nhi?">
+                    <input type="text" placeholder="What's on your mind, Nhi?" class=" js-addPost">
 
                 </div>
 
@@ -125,12 +125,74 @@
                 </div>
 
             </div>
-
+                <!--Start Post Box-->
+                <div class="modal js-modal">
+                    <div class="modal-container js-modal container">
+                        <div class="wrapper">
+                            <section class="post">
+                                <header>Create Post
+                                <i class='material-icons'>close</i>
+                                </header>
+                                <form action="#">
+                                    <div class="content">
+                                        <img class="avatar__img" src="../fb_fake/img/ava.jpg" alt="">
+                                        <div class="details">
+                                            <p>Xuan Nhi</p>
+                                            <div class="privacy">
+                                                <i class="fas fa-user-friends"></i>
+                                                <span>Friends</span>
+                                                <i class="fas fa-caret-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div >
+                                    <textarea  placeholder="What's on your mind, Xuan Nhi" spellcheck="false"></textarea>
+                                    </div>
+                                    <div class="theme-emoji">
+                                        <img src="../fb_fake/img/icons/theme.svg" alt="theme">
+                                        <img src="../fb_fake/img/icons/smile.svg" alt="smile">
+                                    </div>
+                    
+                                    <div class="options">
+                                        <p>Add to your post</p>
+                                        <ul class="list">
+                                            <li><img src="../fb_fake/img/icons/gallery.svg" alt="gallery"> </li>
+                                            <li><img src="../fb_fake/img/icons/tag.svg" alt="gallery"> </li>
+                                            <li><img src="../fb_fake/img/icons/emoji.svg" alt="gallery"> </li>
+                                            <li><img src="../fb_fake/img/icons/mic.svg" alt="gallery"> </li>
+                                            <li><img src="../fb_fake/img/icons/more.svg" alt="gallery"> </li>
+                    
+                                        </ul>
+                                    </div>
+                    
+                    
+                                    <button>Post</button>
+                                </form>
+                            </section>
+                        </div>
+                    </div>    
+                </div>
+                <!--End Post Box-->
             
         </div>
         <div class="body__right">
 
         </div>
     </div>
+
+    <script>
+        const  addPost= document.querySelector('.js-addPost');
+        const modal = document.querySelectorAll('.js-modal')[0];
+        const modal1 = document.querySelectorAll('.js-modal')[1];
+        const modalContainer = document.querySelector('.js-modal-container');
+        //ham hien thi modal mua ve
+        function showAddPost () {
+            modal.classList.add('open')
+            modal1.classList.add('open')
+        }
+        addPost.addEventListener('click', showAddPost);
+
+    </script>
 </body>
 </html>
