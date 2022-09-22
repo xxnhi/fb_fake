@@ -158,11 +158,10 @@
                                         <p>Add to your post</p>
                                         <ul class="list">
                                             <li><img src="../fb_fake/img/icons/gallery.svg" alt="gallery"> </li>
-                                            <li><img src="../fb_fake/img/icons/tag.svg" alt="gallery"> </li>
-                                            <li><img src="../fb_fake/img/icons/emoji.svg" alt="gallery"> </li>
-                                            <li><img src="../fb_fake/img/icons/mic.svg" alt="gallery"> </li>
-                                            <li><img src="../fb_fake/img/icons/more.svg" alt="gallery"> </li>
-                    
+                                            <li><img src="../fb_fake/img/icons/tag.svg" alt="tag"> </li>
+                                            <li><img src="../fb_fake/img/icons/emoji.svg" alt="emoji"> </li>
+                                            <li><img src="../fb_fake/img/icons/mic.svg" alt="mic"> </li>
+                                            <li><img src="../fb_fake/img/icons/more.svg" alt="more"> </li>
                                         </ul>
                                     </div>
                     
@@ -180,12 +179,13 @@
 
         </div>
     </div>
-
+    
     <script>
         const  addPost= document.querySelector('.js-addPost');
         const modal = document.querySelectorAll('.js-modal')[0];
         const modal1 = document.querySelectorAll('.js-modal')[1];
-        const modalContainer = document.querySelector('.js-modal-container');
+
+        // const modalContainer = document.querySelector('.js-modal-container');
         //ham hien thi modal mua ve
         function showAddPost () {
             modal.classList.add('open')
